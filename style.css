@@ -1,0 +1,210 @@
+/* Modern Reset and Core Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Sleek Dark Slate Blue */
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+}
+
+/* Main Wrapper Box */
+.portfolio-container {
+    max-width: 750px;
+    width: 100%;
+    background-color: #1e293b; /* Premium Card Contrast Background */
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Card Styling */
+.profile-card {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.photo-container {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 50%;
+    border: 3px solid #38bdf8; /* Vibrant Cyan Framing */
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.5px;
+}
+
+.student-id {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.bio {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    max-width: 580px;
+    margin: 0 auto 1.75rem auto;
+}
+
+.bio span {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+/* Interactive Navigation Buttons */
+.links-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.8rem 1.75rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(56, 189, 248, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Divider Element */
+.separator {
+    border: 0;
+    height: 1px;
+    background: #334155;
+    margin: 2.5rem 0;
+}
+
+/* Flex Grid Side-by-Side Sections */
+.content-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+.card {
+    flex: 1;
+    min-width: 260px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 1.75rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #38bdf8;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* Hobby Gallery Section Styles */
+.gallery-section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.gallery-title {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.gallery-card {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-display-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    margin-bottom: 1.25rem;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+}
+
+#next-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+}
